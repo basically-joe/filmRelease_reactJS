@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import FilmList from "../components/FilmList"
+
 
 class FilmBox extends Component {
 
@@ -24,7 +26,8 @@ class FilmBox extends Component {
                 },
                 {
                     id: 4,
-                    name: "The Lego Movie 2: The Second Part", url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
+                    name: "The Lego Movie 2: The Second Part", 
+                    url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
                 },
                 {
                     id: 5,
@@ -40,7 +43,7 @@ class FilmBox extends Component {
 
             <div className="comment-box">
                 <h2>Comments</h2>
-                <FilmList data={this.state.data.id} />
+                <FilmList data={this.state.data} />
             </div>
 
         )
