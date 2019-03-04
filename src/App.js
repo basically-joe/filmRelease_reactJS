@@ -4,7 +4,12 @@ import './App.css';
 
 class App extends Component {
   render() {
-    return <FilmBox />
+    return (
+      <div>
+      <h1>New Film Releases (UK)</h1>
+    <FilmBox />
+    </div>
+    )
   }
 }
 
