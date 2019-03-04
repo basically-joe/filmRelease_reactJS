@@ -36,6 +36,14 @@ class FilmBox extends Component {
                 }
             ]
         }
+        this.urlClick = this.urlClick.bind(this);
+
+    }
+
+    urlClick(){
+        this.setState(prevState =>{
+            return "https://www.imdb.com/calendar/?region=gb";
+        });
     }
 
     render() {
@@ -43,6 +51,7 @@ class FilmBox extends Component {
 
             <div className="film-box">
                 <FilmList data = {this.state.data} />
+                <button onClick = {this.urlClick}>Click for more film releases</button>
             </div>
 
         )

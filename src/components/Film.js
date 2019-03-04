@@ -4,7 +4,7 @@ class Film extends Component {
 render() {
     return (
         <div className="film">
-        <a href={this.props.url}><p>{this.props.name} ({this.props.id})</p></a>
+        <a href={this.props.url}><p>{this.props.name}</p></a>
         </div>
     )
 }
